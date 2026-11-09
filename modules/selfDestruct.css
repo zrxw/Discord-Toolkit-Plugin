@@ -1,0 +1,97 @@
+/*
+ * Gon Toolkit
+ * Copyright (c) 2026 tlwm
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+
+
+
+
+.vc-sd-slider-container {
+    padding: 12px 4px 8px 4px !important;
+}
+
+.vc-sd-slider-container .vc-slider-markers {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 4px 0 !important;
+    gap: 0 !important;
+}
+
+.vc-sd-slider-container .vc-slider-marker {
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: var(--text-muted) !important;
+    white-space: nowrap !important;
+    padding: 0 2px !important;
+    min-width: 28px !important;
+    text-align: center !important;
+    flex-shrink: 0 !important;
+}
+
+.vc-sd-slider-container .vc-slider-marker.active {
+    color: var(--text-normal) !important;
+    font-weight: 700 !important;
+}
+
+@media (max-width: 500px) {
+    .vc-sd-slider-container .vc-slider-marker {
+        font-size: 9px !important;
+        min-width: 20px !important;
+        padding: 0 1px !important;
+    }
+}
+
+
+
+@keyframes vc-sd-loader-flip {
+    0% {
+        transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(200px) rotateX(180deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(200px) rotateX(180deg) rotateY(180deg);
+    }
+}
+
+.vc-sd-loader-message {
+    width: 24px;
+    height: 24px;
+    background: #ed4245;
+    border-radius: 4px;
+    animation: vc-sd-loader-flip 1s ease-in-out infinite;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.vc-sd-loader-message.silent {
+    background: #6366f1;
+}
+
+
+
+@keyframes vc-sd-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes vc-sd-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-4px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

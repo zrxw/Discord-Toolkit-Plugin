@@ -1,0 +1,27 @@
+/*
+ * Gon Toolkit
+ * Copyright (c) 2026 tlwm
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+.vc-platform-indicator:empty {
+    display: none !important;
+}
+
+.vc-platform-indicator {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.vc-platform-indicator-profile {
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+.vc-platform-indicator-message {
+    position: relative;
+    vertical-align: top;
+    top: -1px;
+}

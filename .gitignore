@@ -1,0 +1,10 @@
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Local tooling output
+.cache/
+coverage/
+*.log
+*.tsbuildinfo
